@@ -1,3 +1,7 @@
+/*
+ *= require jquery.ui.theme
+ *= require jquery.ui.core
+ */
 /*!
  * jQuery UI Progressbar 1.10.3
  * http://jqueryui.com
@@ -8,25 +12,21 @@
  *
  * http://docs.jquery.com/UI/Progressbar#theming
  */
-/*
- *= require jquery.ui.core
- *= require jquery.ui.theme
- */
-.ui-progressbar {
+.jquery-ui .ui-progressbar {
 	height: 2em;
 	text-align: left;
 	overflow: hidden;
 }
-.ui-progressbar .ui-progressbar-value {
+.jquery-ui .ui-progressbar .ui-progressbar-value {
 	margin: -1px;
 	height: 100%;
 }
-.ui-progressbar .ui-progressbar-overlay {
+.jquery-ui .ui-progressbar .ui-progressbar-overlay {
 	background: url(<%= image_path("jquery-ui/animated-overlay.gif") %>);
 	height: 100%;
 	filter: alpha(opacity=25);
 	opacity: 0.25;
 }
-.ui-progressbar-indeterminate .ui-progressbar-value {
+.jquery-ui .ui-progressbar-indeterminate .ui-progressbar-value {
 	background-image: none;
 }

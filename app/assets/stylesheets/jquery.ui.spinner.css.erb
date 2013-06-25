@@ -1,3 +1,8 @@
+/*
+ *= require jquery.ui.theme
+ *= require jquery.ui.core
+ *= require jquery.ui.button
+ */
 /*!
  * jQuery UI Spinner 1.10.3
  * http://jqueryui.com
@@ -8,19 +13,14 @@
  *
  * http://docs.jquery.com/UI/Spinner#theming
  */
-/*
- *= require jquery.ui.core
- *= require jquery.ui.button
- *= require jquery.ui.theme
- */
-.ui-spinner {
+.jquery-ui .ui-spinner {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
 	padding: 0;
 	vertical-align: middle;
 }
-.ui-spinner-input {
+.jquery-ui .ui-spinner-input {
 	border: none;
 	background: none;
 	color: inherit;
@@ -30,7 +30,7 @@
 	margin-left: .4em;
 	margin-right: 22px;
 }
-.ui-spinner-button {
+.jquery-ui .ui-spinner-button {
 	width: 16px;
 	height: 50%;
 	font-size: .5em;
@@ -44,27 +44,27 @@
 	right: 0;
 }
 /* more specificity required here to overide default borders */
-.ui-spinner a.ui-spinner-button {
+.jquery-ui .ui-spinner a.ui-spinner-button {
 	border-top: none;
 	border-bottom: none;
 	border-right: none;
 }
 /* vertical centre icon */
-.ui-spinner .ui-icon {
+.jquery-ui .ui-spinner .ui-icon {
 	position: absolute;
 	margin-top: -8px;
 	top: 50%;
 	left: 0;
 }
-.ui-spinner-up {
+.jquery-ui .ui-spinner-up {
 	top: 0;
 }
-.ui-spinner-down {
+.jquery-ui .ui-spinner-down {
 	bottom: 0;
 }
 
 /* TR overrides */
-.ui-spinner .ui-icon-triangle-1-s {
+.jquery-ui .ui-spinner .ui-icon-triangle-1-s {
 	/* need to fix icons sprite */
 	background-position: -65px -16px;
 }
